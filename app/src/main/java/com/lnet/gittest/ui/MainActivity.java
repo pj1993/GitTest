@@ -1,10 +1,12 @@
-package com.lnet.gittest;
+package com.lnet.gittest.ui;
 
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.lnet.gittest.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
