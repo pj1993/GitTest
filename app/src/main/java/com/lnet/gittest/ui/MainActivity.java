@@ -10,7 +10,7 @@ import com.lnet.gittest.R;
  * fragmenttablehost进行切换
  * 4个fragment之间切换，内容画在每一个对应的fragment上
  * 一个星期，把这个东西画完
- * fragmenttablehost不会用的话先百度一下，还是不会玩，我帮你搭一下,2,3
+ * fragmenttablehost不会用的话先百度一下，还是不会玩，我帮你搭一下,2,3,4
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     @Override
