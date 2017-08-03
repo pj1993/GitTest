@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/m13" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办公软件"
+            android:layout_marginLeft="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="PPT"
+                android:layout_weight="1"
+
+                android:background="@drawable/rounded_editview"
+
+                />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="PPT"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editview"
+
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="PPT"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editview"
+
+                    />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="PPT"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editview"
+
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="PPT"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editview"
+
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="PPT"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editview"
+
+                    />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+        </GridLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作效率"
+            android:layout_marginLeft="10dp"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <Button
+                    android:id="@+id/button"
+                    android:background="@drawable/rounded_editview"
+                    android:text="时间管理"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:background="@drawable/rounded_editview"
+                    android:text="思维导图"
+                    android:layout_margin="10dp"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电脑基础"
+            android:layout_marginLeft="10dp"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:text="基础操作"
+                    android:background="@drawable/rounded_editview"
+                    android:layout_margin="10dp"
+                    />
+                <Button
+                    android:text="常用工具"
+                    android:background="@drawable/rounded_editview"
+                    android:layout_margin="10dp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

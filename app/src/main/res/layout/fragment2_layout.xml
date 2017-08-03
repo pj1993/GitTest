@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/m14"
+    android:layout_margin="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/m14"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编程语言"
+        android:layout_marginLeft="10dp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="PPT"
+
+            />
+        <Button
+            android:text="Excel"
+
+            />
+        <Button
+            android:layout_column="2"
+            android:layout_row="0"
+            android:text="Word"
+
+            />
+        <Button
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Outlook"
+
+            />
+        <Button
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="Keynote"
+
+            />
+        <Button
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="更多软件"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </GridLayout>
+</LinearLayout>

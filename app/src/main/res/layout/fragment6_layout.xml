@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/m13" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办公软件"
+            android:layout_marginLeft="10dp"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_column="0"
+                android:layout_row="0"
+
+                android:text="PPT"
+
+                />
+            <Button
+                android:text="Excel"
+
+                />
+            <Button
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="Word"
+
+                />
+            <Button
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="Outlook"
+
+                />
+            <Button
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="Keynote"
+
+                />
+            <Button
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="更多软件"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作效率"
+            android:layout_marginLeft="10dp"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:text="时间管理"
+                    />
+                <Button
+                    android:text="思维导图"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电脑基础"
+            android:layout_marginLeft="10dp"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:text="基础操作"
+                    />
+                <Button
+                    android:text="常用工具"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
