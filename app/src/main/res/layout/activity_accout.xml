@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_alignParentRight="true"
+tools:context="com.lnet.gittest.ui.AccoutActivity">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="账号"
+        android:gravity="center"
+        android:textSize="18dp" />
+    <View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="#f2f2ef"
+    android:layout_marginLeft="10dp"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="消息中心"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/m2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:background="#efebeb"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="个人资料"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/m2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:background="#efebeb"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="我的优惠券"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/im_dayutubioa"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/m2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="去兑换"
+        android:textSize="13dp"
+        android:layout_toLeftOf="@+id/im_dayutubioa"
+        android:gravity="center_vertical"/>
+</RelativeLayout>
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="#f2f2ef"
+    android:layout_marginLeft="10dp"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="我的购物车" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/m2" />
+</RelativeLayout>
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="#f2f2ef"
+    android:layout_marginLeft="10dp"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="我的订单" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/m2" />
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:background="#efebeb"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="手机账号绑定"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/im_dayutubioa2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/m2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="安全升级"
+        android:textSize="13dp"
+        android:layout_toLeftOf="@+id/im_dayutubioa2"
+        android:gravity="center_vertical"/>
+</RelativeLayout>
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="#f2f2ef"
+    android:layout_marginLeft="10dp"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="设置" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/m2" />
+</RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:background="#efebeb"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="意见反馈" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/m2" />
+</RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>
