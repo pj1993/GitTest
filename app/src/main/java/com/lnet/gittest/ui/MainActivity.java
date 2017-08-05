@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.lnet.gittest.R;
 
@@ -24,26 +26,26 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
 
+    private Button bt_accout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
+//        bt_accout = (Button) findViewById(R.id.bt_accout);
+//        bt_accout.setOnClickListener(this);
+//        findViewById(R.id.bt_firstpage).setOnClickListener(this);
+
 
     }
 
 
+    
 
-    @Override
-    public void onClick(View v) {
 
-    }
-    public void btnAccout(View view)
-    {
-        Intent intent=new Intent(this,AccoutActivity.class);
-        startActivity(intent);
-    }
+
     public void btnFirst(View view)
     {
         Intent intent=new Intent(this,First_Activity.class);
@@ -53,4 +55,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, FenLei_Activity.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    //@Override
+//    public void onClick(View v) {
+//        switch (v.getId()) {
+//            case R.id.bt_accout:
+//                Toast.makeText(this, "aaaa", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.bt_firstpage:
+//                Toast.makeText(this, "bbbb", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
+//    }
 }

@@ -9,6 +9,91 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#e8e8e8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8" />
+
+                <TextView
+                    android:id="@+id/tv_officerate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#e8e8e8"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="办公效率" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_pragromdevelopment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:gravity="center"
+                    android:text="编程开发" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_productanddesign"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#e8e8e8"
+                    android:gravity="center"
+                    android:text="产品与设计" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_lifestyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#e8e8e8"
+                    android:gravity="center"
+                    android:text="生活方式" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_professiondevelopment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#e8e8e8"
+                    android:gravity="center"
+                    android:text="职业发展" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_maketmanangerment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#e8e8e8"
+                    android:gravity="center"
+                    android:text="市场营销" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:orientation="horizontal">
@@ -34,32 +119,5 @@
                 android:textSize="16sp"/>
         </FrameLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-    <fragment
 
-        class="com.lnet.gittest.ui.Meun_Fragment"
-        android:id="@+id/Meun_fg"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-
-        />
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fl_content">
-
-    </FrameLayout>
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

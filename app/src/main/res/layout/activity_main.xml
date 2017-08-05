@@ -7,7 +7,46 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:layout_alignParentRight="true"
 tools:context="com.lnet.gittest.ui.MainActivity">
-<ScrollView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_firstpage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/tv_feileipage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分类"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_firstpage"
+            />
+        <TextView
+            android:id="@+id/tv_mystudypage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的学习"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_feileipage"/>
+        <TextView
+            android:id="@+id/tv_accoutpage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账号"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_mystudypage"/>
+
+    </LinearLayout>
+
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none">
@@ -304,24 +343,5 @@ tools:context="com.lnet.gittest.ui.MainActivity">
     </LinearLayout>
 </ScrollView>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="40dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:onClick="btnAccout"
-        android:text="账号" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="首页"
-        android:onClick="btnFirst"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="分类"
-        android:onClick="btnfenlei"/>
-</LinearLayout>
 </FrameLayout>
