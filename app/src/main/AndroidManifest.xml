@@ -12,18 +12,16 @@
         <activity android:name=".ui.MainActivity">
 
         </activity>
-        <activity android:name=".ui.AccoutActivity" >
-
-        </activity>
-        <activity android:name=".ui.First_Activity" >
-
-        </activity>
+        <activity android:name=".ui.AccoutActivity"></activity>
+        <activity android:name=".ui.First_Activity"></activity>
         <activity android:name=".ui.FenLei_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.MyStudy_Activity"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,9 @@
 package com.lnet.gittest.ui;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lnet.gittest.R;
@@ -25,7 +29,7 @@ import java.util.List;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-
+    static final int COLOR1 = Color.parseColor("#FFF2F4F2");
     private Button bt_accout;
 
     @Override
@@ -39,6 +43,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        findViewById(R.id.bt_firstpage).setOnClickListener(this);
 
 
+//        findViewById(R.id.tv_mystudypage).setOnClickListener(this);
+        findViewById(R.id.tv_firstpage).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position=0;
+                switch (v.getId())
+                {
+                    case R.id.tv_firstpage:
+                        position=0;
+                        showmian(position);
+                        break;
+                }
+            }
+        });
+
     }
 
 
@@ -46,18 +65,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-    public void btnFirst(View view)
-    {
-        Intent intent=new Intent(this,First_Activity.class);
-        startActivity(intent);
-    }
-    public void btnfenlei(View view) {
-        Intent intent = new Intent(this, FenLei_Activity.class);
-        startActivity(intent);
-    }
+//    public void btnFirst(View view)
+//    {
+//        Intent intent=new Intent(this,First_Activity.class);
+//        startActivity(intent);
+//    }
+//    public void btnfenlei(View view) {
+//        Intent intent = new Intent(this, FenLei_Activity.class);
+//        startActivity(intent);
+//    }
 
+    public  void showmian(int position){
+
+        FragmentManager fm1=getFragmentManager();
+        FragmentTransaction ft1= fm1.beginTransaction();
+        TextView textView=(TextView) findViewById(R.id.tv_officerate);
+        textView.setBackgroundColor(COLOR1);
+        ContentFragment cf2=ContentFragment.getInstance(position);
+        ft1.replace(R.id.fl_content,cf2);
+        ft1.commit();
+    }
     @Override
     public void onClick(View v) {
+
 
     }
 

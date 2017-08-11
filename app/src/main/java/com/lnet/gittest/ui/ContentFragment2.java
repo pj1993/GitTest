@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 import com.lnet.gittest.R;
 
 /**
- * Created by zhao on 2017/8/2.
+ * Created by zhao on 2017/8/5.
  */
 
-public class ContentFragment extends Fragment {
+public class ContentFragment2 extends Fragment {
     @Nullable
-    int []content={R.layout.fragment2_layout,R.layout.fragment1_layout,R.layout.fragment3_layout,R.layout.fragment4_layout,R.layout.fragment5_layout,R.layout.fragment6_layout};
+    int []content={R.layout.activity_first_,R.layout.activity_fen_lei_,R.layout.activity_my_study_,R.layout.activity_accout};
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         return inflater.inflate(content[getPosition()],container,false);
@@ -25,12 +25,11 @@ public class ContentFragment extends Fragment {
         return this.getArguments().getInt("position");
     }
 
-    public static ContentFragment getInstance(int position){
-        ContentFragment cf=new ContentFragment();
+    public static ContentFragment2 getInstance(int position){
+        ContentFragment2 cf=new ContentFragment2();
         Bundle bundle=new Bundle();
         bundle.putInt("position",position);
         cf.setArguments(bundle);
         return cf;
     }
-
 }

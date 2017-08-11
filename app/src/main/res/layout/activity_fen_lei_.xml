@@ -20,29 +20,62 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
                 <TextView
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:background="#e8e8e8" />
 
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+                <View
+                    android:visibility="visible"
+                    android:id="@+id/view_1"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#06cb0d"
+                    />
+
                 <TextView
-                    android:id="@+id/tv_officerate"
+                    android:id="@+id/tv_pragromdevelopment"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="#e8e8e8"
                     android:clickable="true"
                     android:gravity="center"
-                    android:text="办公效率" />
+                    android:text="编程开发" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+                <View
+                    android:visibility="invisible"
+                    android:id="@+id/view_2"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#06cb0d"
 
+                    />
                 <TextView
+
                     android:clickable="true"
-                    android:id="@+id/tv_pragromdevelopment"
+                    android:id="@+id/tv_officerate"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
 
                     android:gravity="center"
-                    android:text="编程开发" />
+                    android:text="办公效率" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+                <View
+                    android:visibility="invisible"
+                    android:id="@+id/view_3"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#06cb0d"
+                    />
 
                 <TextView
                     android:clickable="true"
@@ -52,7 +85,17 @@
                     android:background="#e8e8e8"
                     android:gravity="center"
                     android:text="产品与设计" />
-
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+                <View
+                    android:visibility="invisible"
+                    android:id="@+id/view_4"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#06cb0d"
+                    />
                 <TextView
                     android:clickable="true"
                     android:id="@+id/tv_lifestyle"
@@ -61,7 +104,17 @@
                     android:background="#e8e8e8"
                     android:gravity="center"
                     android:text="生活方式" />
-
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+                <View
+                    android:visibility="invisible"
+                    android:id="@+id/view_5"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#06cb0d"
+                    />
                 <TextView
                     android:clickable="true"
                     android:id="@+id/tv_professiondevelopment"
@@ -70,7 +123,17 @@
                     android:background="#e8e8e8"
                     android:gravity="center"
                     android:text="职业发展" />
-
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content">
+                <View
+                    android:visibility="invisible"
+                    android:id="@+id/view_6"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#06cb0d"
+                    />
                 <TextView
                     android:clickable="true"
                     android:id="@+id/tv_maketmanangerment"
@@ -79,6 +142,7 @@
                     android:background="#e8e8e8"
                     android:gravity="center"
                     android:text="市场营销" />
+            </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
 
@@ -92,32 +156,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <EditText
-                android:id="@+id/search_et_input"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="8dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/rounded_editview"
-                android:drawableLeft="@drawable/m7"
-                android:hint="网易云课堂"
-                android:imeOptions="actionSearch"
-                android:inputType="text"
-                android:textSize="16sp"/>
-        </FrameLayout>
-    </LinearLayout>
 
 </LinearLayout>
